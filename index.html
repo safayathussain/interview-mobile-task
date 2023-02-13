@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <section class="mt-5 ml-5 mb-5">
+            <form action="#" class="">
+                <label for="filter-brand" class="text-4xl font-normal ml-5">Filter by Brand :</label>
+                <select name="company" id="filter-brand" class="border ml-3 text-2xl" onchange="filterBrand(value)">
+                    <option value="default">Default</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Apple">Iphone</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="Infinix">Infinix</option>
+                </select>
+            </form>
+            <br>
+            <form action="#" class="">
+                <label for="filter-stock" class="text-4xl font-normal ml-5">Filter by Stock:</label>
+                <select name="stock" id="filter-stock" class="border ml-3 text-2xl" onchange="isStock(value)">
+                    <option value="default">Default</option>
+                    <option value="inStock">Stock In</option>
+                    <option value="outStock">Stock Out</option>
+                    
+                </select>
+            </form>
+            
+        </section>
+        <!-- mobiles section -->
+        <section id="mobile-container">
+
+        </section>
+        <section>
+            
+        </section>
+    </main>
+    <script src="js/mobiles.js"></script>
+</body>
+</html>
